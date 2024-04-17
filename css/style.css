@@ -8,24 +8,38 @@
   padding: 0px !important;
 }
 
-h1 {
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-}
-
 .header {
   width: 100vw;
-  height: 50vh;
   background-image: url("../assets/fotos/porto.png");
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header img {
   width: 120px;
   position: relative;
-  left: 25px;
-  top: 25px;
+  left: 20px;
+  top: 20px;
+}
+.header h1 {
+  position: relative;
+  top: -15px;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-size: 70px;
+  text-align: center;
+  text-shadow: 10px 10px 15px white;
+}
+
+.reproductor {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.reproductor img {
+  width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
