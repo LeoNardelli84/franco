@@ -43,6 +43,11 @@
 }
 .reproductor img {
   width: 300px;
+  margin-bottom: 20px;
+}
+.reproductor audio {
+  height: 40px;
+  margin-bottom: 20px;
 }
 .reproductor h2 {
   font-size: 35px;
