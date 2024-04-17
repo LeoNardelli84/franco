@@ -1,5 +1,19 @@
 h1{
     font-family: "Crimson Text", serif;
     font-weight: 700;
-    
+}
+
+.header{
+    width: 100vw;
+    height: 50vh;
+    background-image: url('../assets/fotos/porto.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    img{
+        width: 120px;
+        position: relative;
+        left: 25px;
+        top: 25px;
+    }
 }
