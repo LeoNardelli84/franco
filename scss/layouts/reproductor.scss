@@ -1,8 +1,18 @@
 .reproductor{
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     img{
         width: 300px;
+    }
+    h2{
+        font-size: 35px;
+        font-family: "Oswald", sans-serif;
+    }
+    p{
+        padding: 20px;
+        text-align: justify;
     }
 }
