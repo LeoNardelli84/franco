@@ -20,4 +20,24 @@
         padding: 20px;
         text-align: justify;
     }
+   .lista{
+        .temas{
+            a{
+                width: 90vw;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-bottom: 2px solid;
+                text-decoration: none;
+                img{
+                    width: 50px;
+                }
+                .nombre{
+                    position: relative;
+                    right: -100px;
+                }
+            }
+            
+        }
+    }
 }

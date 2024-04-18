@@ -31,7 +31,7 @@
   font-weight: 700;
   font-size: 70px;
   text-align: center;
-  text-shadow: 10px 10px 15px white;
+  text-shadow: 5px 5px 8px white;
 }
 
 .reproductor {
@@ -56,6 +56,21 @@
 .reproductor p {
   padding: 20px;
   text-align: justify;
+}
+.reproductor .lista .temas a {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid;
+  text-decoration: none;
+}
+.reproductor .lista .temas a img {
+  width: 50px;
+}
+.reproductor .lista .temas a .nombre {
+  position: relative;
+  right: -100px;
 }
 
 .footer {
