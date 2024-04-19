@@ -64,15 +64,15 @@
   align-items: center;
   border-bottom: 2px solid;
   text-decoration: none;
+  color: black;
 }
 .reproductor .lista .temas a img {
   width: 50px;
 }
 .reproductor .lista .temas a .nombre {
   position: relative;
-  right: -100px;
+  right: -20px;
 }
-
 .footer {
   width: 100vw;
   display: flex;
