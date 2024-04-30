@@ -20,6 +20,12 @@
         padding: 20px;
         text-align: justify;
     }
+    .leyenda{
+        min-height: 70px; 
+        #btn-stop{
+            font-size: 30px;
+        }
+    }
    .lista{
         .temas{
             a{
@@ -37,9 +43,7 @@
                     position: relative;
                     right: -20px;
                 }
-                p{
-                    
-                }
+                
             }
             
         }
