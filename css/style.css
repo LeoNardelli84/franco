@@ -59,10 +59,18 @@
   text-align: justify;
 }
 .reproductor .leyenda {
-  min-height: 70px;
+  height: 175px;
+  width: 90vw;
+  padding: 10px;
 }
 .reproductor .leyenda span i {
   font-size: 45px;
+}
+.reproductor .leyenda .tiempo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .reproductor .lista .temas a {
   width: 90vw;
@@ -96,7 +104,8 @@
 .footer .whatsapp,
 .footer .youtube,
 .footer .tiktok,
-.footer .instagram {
+.footer .instagram,
+.footer .spotify {
   width: 80vw;
   display: flex;
   align-items: center;
@@ -109,7 +118,8 @@
 .footer .whatsapp img,
 .footer .youtube img,
 .footer .tiktok img,
-.footer .instagram img {
+.footer .instagram img,
+.footer .spotify img {
   width: 100px;
 }
 .footer h3 {

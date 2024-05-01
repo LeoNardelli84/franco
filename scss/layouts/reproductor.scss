@@ -21,11 +21,20 @@
         text-align: justify;
     }
     .leyenda{
-        min-height: 70px; 
+        
+        height: 175px;
+        width: 90vw;
+        padding: 10px; 
         span{
             i{
                 font-size: 45px;
             }
+        }
+        .tiempo{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
     }
    .lista{
