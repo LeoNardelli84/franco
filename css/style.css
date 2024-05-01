@@ -61,8 +61,8 @@
 .reproductor .leyenda {
   min-height: 70px;
 }
-.reproductor .leyenda #btn-stop {
-  font-size: 30px;
+.reproductor .leyenda span i {
+  font-size: 45px;
 }
 .reproductor .lista .temas a {
   width: 90vw;

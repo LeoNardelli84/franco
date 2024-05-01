@@ -1,12 +1,8 @@
+$("#btn-pause").hide();
 
-$("#btn-stop").hide();
 let playlist = $('#playlist');
 let canciones = playlist.children('a');
 let audio = new Audio();
-
-//sconsole.log(temas[2]);
-//function changeTrack(url, audio){
-//    $("#reproductor").attr('src', url).appendTo(audio);
 
 $("a").click(function(e){
     
@@ -17,19 +13,48 @@ $("a").click(function(e){
     
     audio.load();
     audio.play();
+    
+    audio.onloadeddata = function() {
+        console.log(audio.duration/60);
+        //me da la duracion del tema. twngo que ver 
+        //como hago para que aparezca el tiempo
+    };
 
+    $("#btn-play").hide();
+    $("#btn-pause").show();
+
+    $(".leyenda").show();
     $("#nombre_tema").html(cancion);
-    $("#btn-stop").show();
     $("a").css('background-color', 'white');
     $("a").children('img').attr('src', 'assets/fotos/portada.png');
     $(this).css('background-color', '#ff8e04');
     $(this).children('img').attr('src','assets/fotos/music.gif');
     e.preventDefault();
 });
-
 $("#btn-stop").click(function(){
-   audio.pause();
-   audio.currentTime = 0;
+    audio.pause();
+    $("#btn-pause").hide();
+    $("#btn-play").show();
+    audio.currentTime = 0;
+});
+
+$("#btn-play").click(function(){
+    $("#btn-play").hide();
+    $("#btn-pause").show();
+    audio.play();
+});
+
+$("#btn-pause").click(function(){
+   if (audio.paused){
+       audio.play();
+       
+   } else{
+       audio.pause();
+       $("#btn-pause").hide();
+       $("#btn-play").show();
+   }
+
+   
    $("a").children('img').attr('src', 'assets/fotos/portada.png');
    
 });
