@@ -12,8 +12,6 @@ $("a").click(function(e){
     var url = $(this).attr('href');
     audio.volume = 0.3;
     audio.src = url;
-    
-    audio.load();
     audio.play();
     
     audio.onloadeddata = function() {
@@ -56,7 +54,7 @@ $("a").click(function(e){
     $("a").css('background-color', 'white');
     $("a").children('img').attr('src', 'assets/fotos/portada.png');
     $(this).css('background-color', '#ff8e04');
-    e.preventDefault();
+    //e.preventDefault();
 });
 
 $("#btn-stop").click(function(){
