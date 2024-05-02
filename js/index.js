@@ -101,7 +101,7 @@ $(".btn-redes").click(function(e){
             $(location).attr('href', 'https://www.youtube.com/@FrancoNadal/featured');
             break;
         case 'Mi Tiktok':
-            $(location).attr('href', 'https://www.tiktok.com/@franconadal42');
+            $(location).attr('href', 'https://www.tiktok.com/@franconadal42?is_from_webapp=1&sender_device=pc');
             break;
         case 'Instagram':
             $(location).attr('href', 'https://www.instagram.com/franco.nadal.musica/');
