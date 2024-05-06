@@ -10,14 +10,15 @@ let audio = new Audio();
 
 
 $("a").click(function(e){
-    $(".leyenda").show();
-    $(".leyenda").addClass("animate__animated animate__lightSpeedInLeft");
+    
     var cancion = $(this).find(":nth-child(3)").text();
     var url = $(this).attr('href');
     audio.volume = 0.3;
     audio.src = url;
     audio.play();
-    
+    $(".leyenda").show();
+    $(".leyenda").addClass("animate__animated animate__lightSpeedInLeft");
+    $(".lista").addClass("animate__animated animate__slideInDown");
     //$(this).addClass("animate__animated animate__heartBeat")
     audio.onloadeddata = function() {
         
