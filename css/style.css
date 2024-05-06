@@ -72,6 +72,9 @@
   flex-direction: row;
   justify-content: space-around;
 }
+.reproductor .leyenda #seek {
+  width: 100%;
+}
 .reproductor .lista .temas a {
   width: 90vw;
   display: flex;

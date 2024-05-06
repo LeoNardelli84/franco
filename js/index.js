@@ -22,11 +22,14 @@ $("a").click(function(e){
         
         audio.addEventListener("timeupdate", function(){
             var timeleft = document.getElementById('timeleft');
-            timeleft.innerHTML = "00:00";  
             var duration = parseInt(audio.duration);
+
+
             var currentTime = parseInt(audio.currentTime);
             var timeLeft = duration - currentTime, s, m;
-    
+            
+            
+
             s = timeLeft % 60;
             m = Math.floor( timeLeft / 60 ) % 60;
     
@@ -43,6 +46,10 @@ $("a").click(function(e){
         var timeline = document.getElementById('duration');
         var s = parseInt(audio.currentTime % 60);
         var m = parseInt((audio.currentTime / 60) % 60);
+        
+
+
+
         if (s < 10) {
             timeline.innerHTML = m + ':0' + s;
         }
@@ -86,10 +93,22 @@ $("#btn-pause").click(function(){
 
 });
 
+//barra de desplazamiento de audio
+//id = seek
+$("#seek").bind("change", function(){
+    audio.currentTime = $(this).val();
+    $("#seek").attr("max", audio.duration);
+});
+audio.addEventListener('timeupdate', function(){
+    curtime = parseInt(audio.currentTime, 10);
+    $("#seek").attr("value", curtime);
+});
+
 //botones links a redes sociales
 $(".btn-redes").click(function(e){
     var social = $(this).find(":nth-child(1)").text();
-
+    //console.log(social);
+    //e.preventDefault();
     switch (social) {
         case 'Ponte en contacto conmigo':
             $(location).attr('href', 'https://api.whatsapp.com/send?phone=351931944363&text=Hi%20Franco!,%20');
@@ -101,7 +120,7 @@ $(".btn-redes").click(function(e){
             $(location).attr('href', 'https://www.youtube.com/@FrancoNadal/featured');
             break;
         case 'Mi Tiktok':
-            $(location).attr('href', 'https://www.tiktok.com/@franconadal42?is_from_webapp=1&sender_device=pc');
+            $(location).attr('href', 'https://www.tiktok.com/@franconadal42');
             break;
         case 'Instagram':
             $(location).attr('href', 'https://www.instagram.com/franco.nadal.musica/');
