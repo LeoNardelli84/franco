@@ -2,7 +2,7 @@
 AOS.init();
 
 $("#btn-pause").hide();
-
+$(".leyenda").hide();
 let playlist = $('#playlist');
 //let canciones = playlist.children('a');
 let audio = new Audio();
@@ -10,7 +10,8 @@ let audio = new Audio();
 
 
 $("a").click(function(e){
-    
+    $(".leyenda").show();
+    $(".leyenda").addClass("animate__animated animate__lightSpeedInLeft");
     var cancion = $(this).find(":nth-child(3)").text();
     var url = $(this).attr('href');
     audio.volume = 0.3;
